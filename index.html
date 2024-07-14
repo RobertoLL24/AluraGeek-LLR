@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura geek </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+    
+    <nav>
+        <ul>
+            <img src="imagenes/manita.png" id="manita" alt="manita">
+            <li><a href="#productos">Galeria de productos</a></li>
+            <li><a href="#nuevoProductoForm">Agrega un producto</a></li>
+    
+            <h4 id="slogan"><i>todo lo que necesitas, a un solo click</i></h4>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section class="productos-list" id="productos">
+            <h1>Productos Disponibles</h1>
+            <p id="no-productos">sin mercancia por el momento</p>
+            <div class="productos-grid" id="productos-grid"></div>
+        </section>
+        <aside class="nuevo-producto">
+            <h2>Agregar Productos Nuevos </h2>
+            <form id="nuevoProductoForm">
+                <input type="text" id="nombre" placeholder="Nombre del producto" required />
+                <input type="number" id="precio" placeholder="Precio" required />
+                <input type="text" id="imagenUrl" placeholder="URL de la imagen" required />
+                <button type="submit">Agregar Producto</button>
+                <button type="button" id="borrarCampos">Borrar</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <h2>Navega, compra y vende</h2>
+        <p>Derechos reservados RLL 2024 </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
